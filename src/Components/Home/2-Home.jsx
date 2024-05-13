@@ -147,8 +147,8 @@ const Home = () => {
 
 
                             <div className="flex3_content_home">
-                                <h1>FIND ME ON</h1>
-                                <p>Feel free to <span>connect</span> with me</p>
+                                <h1 style={{color:"white"}}><span  className="scale">FIND</span> <span className="scale">ME</span> <span className="scale">ON</span></h1>
+                                <p><span>Feel</span> free to <span>connect</span> with me</p>
                                 <ul>
                                     <motion.li
                                      initial={{ scale: 0.5 }}
