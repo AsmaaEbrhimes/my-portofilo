@@ -159,9 +159,11 @@ span {
 
 .flex3_content_home {
     position: relative;
-    top: 200px;
+    padding: 25px;
+    color: white;
     text-align: center;
     margin: auto;
+    z-index: 1111;
 }
 
 .flex3_content_home h1,

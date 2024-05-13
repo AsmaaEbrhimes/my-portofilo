@@ -150,9 +150,40 @@ const Home = () => {
                                 <h1>FIND ME ON</h1>
                                 <p>Feel free to <span>connect</span> with me</p>
                                 <ul>
-                                    <li><a href="/"><i class="fa-brands fa-github"></i></a></li>
-                                    <li><a href="/"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="/"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                    <motion.li
+                                     initial={{ scale: 0.5 }}
+                                     animate={{ scale: 0.1 }}
+                                     transition={{
+
+                                         type: "spring",
+                                         steiffness: 300,
+                                         demping: 5
+                                     }}
+                                     whileInView={{ scale: 1.1 }} >
+                                    
+                                    <a href="https://github.com/"><i class="fa-brands fa-github"></i></a></motion.li>
+                                    <motion.li
+                                     initial={{ scale: 0.5 }}
+                                     animate={{ scale: 0.1 }}
+                                     transition={{
+
+                                         type: "spring",
+                                         steiffness: 300,
+                                         demping: 5
+                                     }}
+                                     whileInView={{ scale: 1.1 }}
+                                    ><a href="https://www.facebook.com/profile.php?id=100094496622857"><i class="fa-brands fa-facebook-f"></i></a></motion.li>
+                                    <motion.li
+                                     initial={{ scale: 0.5 }}
+                                     animate={{ scale: 0.1 }}
+                                     transition={{
+
+                                         type: "spring",
+                                         steiffness: 300,
+                                         demping: 5
+                                     }}
+                                     whileInView={{ scale: 1.1 }}
+                                    ><a href="https://www.linkedin.com/in/asmaa-ebrhime-944b17278/recent-activity/all/"><i class="fa-brands fa-linkedin-in"></i></a></motion.li>
                                 </ul>
                             </div>
 
