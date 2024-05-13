@@ -22,9 +22,8 @@ const Header = () => {
                         <Link to="/about" style={{ textDecoration: "none", color: "white" }} >
                             <li><i style={{marginRight:"5px"}} class="fa-regular fa-address-card"></i>About</li>
                         </Link>
-                        <Link to="#"style={{ textDecoration: "none", color: "white" }}>
-                            <li><i style={{marginRight:"5px"}} class="fa-solid fa-flag"></i>Repo</li>
-                        </Link>
+                           <a style={{color:"white"}} href="https://github.com/AsmaaEbrhimes/my-portofilo.git"><li><i style={{marginRight:"5px"}} class="fa-solid fa-flag"></i>Repo</li></a> 
+                        
                     </ul>
                 </div>
 
