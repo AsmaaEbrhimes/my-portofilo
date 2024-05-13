@@ -1,0 +1,228 @@
+body {
+    background-image: url("../image/maxresdefault.jpg");
+    color: white;
+}
+
+span {
+    color: #be45ee;
+}
+
+.top {
+    position: relative;
+    margin-top: 200px;
+}
+
+
+.personal_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.personal_desc h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.personal_desc p {
+    margin-bottom: 25px;
+}
+
+.personal_desc p:last-child {
+    text-align: center;
+    margin: auto;
+    color: #915ba7;
+}
+
+.personal_desc h1 span {
+    color: #be45ee;
+}
+
+.pernol_img {
+    width: 50%;
+    position: absolute;
+    display: inline-block;
+    right: 0;
+}
+
+.personal_desc p {
+    font-size: 20px;
+}
+
+.content_skills {
+    margin-top: 150px;
+}
+
+.content_skills h1 {
+    text-align: center;
+
+}
+
+.content_skill_lang_flex {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.content_skill_lang_flex div {
+    position: relative;
+    width: 30%;
+    background-color: rgb(41, 41, 41);
+
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 60px 10px;
+    text-align: center;
+    margin: 30px auto;
+    overflow: hidden;
+    z-index: 111;
+
+}
+
+.content_skill_lang_flex div::before {
+
+    position: absolute;
+    content: "";
+    height: calc(100% + 5px);
+    width: calc(100% + 5px);
+    left: 0;
+    top: 0;
+    filter: blur(10px);
+
+    background-size: inherit;
+    z-index: -111;
+
+    background: linear-gradient(45deg, #6fb046, #ff6660, #e6fb04, #ff00ff, #ff0099, #6ee0dd, #099fff);
+
+    inset: 5px;
+    animation: anmaite 3s linear infinite;
+}
+
+.content_skill_lang_flex div::after {
+    position: absolute;
+    content: "";
+    background-color: rgb(49, 46, 46);
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    left: 4px;
+    top: 4px;
+    z-index: -111;
+
+}
+
+.tool_programing {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 100px;
+
+}
+
+
+
+.tool_programing div {
+position: relative;
+    width: 30%;
+    background-color: rgb(65, 63, 63);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 50px 0;
+    background-color: rgb(56, 54, 54);
+    z-index: 10;
+}
+
+.tool_programing div:first-child:before , .tool_programing div:nth-child(4)::before{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background: linear-gradient(45deg, #ffbc00, #ff0058);
+filter: blur(15px);
+z-index: -1;
+}
+
+.tool_programing div:nth-child(2)::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+    filter: blur(15px);
+    z-index: -1;
+    }
+
+
+    .tool_programing div:nth-child(3)::before ,.tool_programing div:nth-child(5)::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(315deg, #4dff03, #00d0ff);
+        filter: blur(15px);
+        z-index: -1;
+        }
+.tool {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+.content_tool_programing h1{
+    margin-top: 100px;
+     text-align: center;
+     margin: auto;
+     margin-bottom: 40px;
+     font-size: 40px;
+}
+
+
+@keyframes anmaite {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+
+    }
+}
+
+
+@media (min-width:320px) and (max-width:767px) {
+    .personal_desc {
+        margin: auto;
+        display: block;
+        width: 100%;
+
+    }
+
+    .pernol_img {
+        display: none;
+    }
+}
+
+@media (min-width:767px) and (max-width:1000px) {
+
+    .personal_desc {
+        margin: auto;
+        display: block;
+        width: 100%;
+
+    }
+
+    .pernol_img {
+        display: none;
+    }
+}
