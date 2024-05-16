@@ -12,7 +12,6 @@ const data = [
         desc: "i work this projects Actains this project is ver nise i work Anmation is very nise and beatufiul and i work logic cards ",
         demo: "https://inquisitive-biscochitos-1b297d.netlify.app/",
         repo: "https://github.com/AsmaaEbrhimes/actains.git"
-
     },
     {
         Name: "This The Project Jumia The Project Is very Nise",

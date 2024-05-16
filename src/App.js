@@ -7,6 +7,7 @@ import Contact from "./Components/Contact/Contact"
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from "framer-motion"
 import Loding from "./Components/Loding/Loding"
+import Dashbord from "./Components/dashbord/dashbord"
 import { useState, useEffect } from "react"
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
     window.addEventListener("load", () => {
       setTimeout(() => {
         setLoading(false);
-      },4500);
+      },500);
     });
   }, []);
 
@@ -37,6 +38,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/project" element={<Project />} />
+          <Route path="/dashbord" element={<Dashbord />} />
         </Routes>
       )}
     </AnimatePresence>

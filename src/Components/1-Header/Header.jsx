@@ -8,6 +8,10 @@ const Header = () => {
                 <div className="flex_header_content">
                     <h1>Sb.</h1>
                     <ul className="list_header">
+
+                    <Link to="/dashbord" style={{ textDecoration: "none", color: "white" }}>
+                            <li><i style={{ textDecoration: "none", color: "white" }} class="fa-solid fa-gauge-high"></i>Dishbord</li>
+                        </Link>
                         <Link to="/" style={{ textDecoration: "none", color: "white" }}>
                             <li><i style={{marginRight:"5px"}} class="fa-solid fa-house"></i>Home</li>
                         </Link>
